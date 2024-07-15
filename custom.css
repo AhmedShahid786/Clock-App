@@ -1,0 +1,42 @@
+input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+input[type="number"] {
+  border: none;
+  outline: none;
+}
+body{
+  font-family: "Quicksand", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+#h_div {
+  height: 20dvh;
+  width: 100%;
+}
+
+#clock_div {
+  height: 40dvh;
+  width: 100%;
+}
+
+#mins,
+#secs,
+#millis,
+#hours {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30%;
+}
+
+.dot {
+  width: 3%;
+}
+
+#btn_div {
+  /* border: 2px solid red; */
+  height: 20dvh;  
+  width: 100%;
+}

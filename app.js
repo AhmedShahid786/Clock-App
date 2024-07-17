@@ -357,7 +357,7 @@ function timer() {
       if (todo === "dontStart") {
         main_div.innerHTML = `
       <div id="popup_div"
-        class="h-full w-full border-2 border-amber-400 rounded-lg bg-black flex flex-col justify-center items-center animate__animated  animate__slow animate__zoomIn">
+        class="h-full w-96 border-2 border-amber-400 rounded-lg bg-black flex flex-col justify-center items-center animate__animated  animate__slow animate__zoomIn">
       <div class="mx-auto mb-10">  
         <p class="text-3xl text-amber-400">Please Enter A Valid Time.</p>
       </div>

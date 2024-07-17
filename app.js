@@ -21,7 +21,7 @@ function change_ui(activeButton) {
           main_div.innerHTML = `<div id="hours" class="text-gray-400 text-4xl sm:text-7xl flex flex-col sm:flex-row items-center sm:space-x-2 w-full">
   <input
     type="number" id="hours_inp" autocomplete="off" oninput="restrictInput(event)" placeholder="00"
-    class="w-full sm:w-1/3 h-12 bg-transparent border-y-2 border-y-amber-400 text-center"
+    class="w-full sm:w-1/3 h-12 bg-transparent border-2 border-amber-400 text-center"
   />
   <div>
     <p class="dot text-amber-400 text-xl sm:text-2xl">h</p>
@@ -357,7 +357,7 @@ function timer() {
       if (todo === "dontStart") {
         main_div.innerHTML = `
       <div id="popup_div"
-        class="h-full w-96 border-2 border-amber-400 rounded-lg bg-black flex flex-col justify-center items-center animate__animated  animate__slow animate__zoomIn">
+        class="h-full sm:w-96 w-72 border-2 border-amber-400 rounded-lg bg-black flex flex-col justify-center items-center animate__animated  animate__slow animate__zoomIn">
       <div class="mx-auto mb-10">  
         <p class="text-3xl text-amber-400">Please Enter A Valid Time.</p>
       </div>

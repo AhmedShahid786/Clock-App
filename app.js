@@ -206,11 +206,12 @@ function stopwatch_ui() {
   //* Accessing buttons to start,stop & reset stopwatch
   let start_btn = document.getElementById("start_btn");
   let reset_btn = document.getElementById("reset_btn");
-  let lap_btn = document.getElementById("start_btn");
+  let lap_btn = document.getElementById("lap_btn");
 
-  //* Adding event listeners on buttons to perform start,stop & reset functions
+  //* Adding event listeners on buttons to perform start,stop,reset and record lap functions
   start_btn.addEventListener("click", start);
   reset_btn.addEventListener("click", reset);
+  lap_btn.addEventListener("click", lap);
 
   //* Accessing other important html elements to display data
   let reset_div = document.getElementById("reset_div");
@@ -246,7 +247,7 @@ function stopwatch_ui() {
     }
   }
 
-  //? The 3 main stopwatch functions
+  //? The 3 main stopwatch functions and The Lap record function
   function start() {
     console.log("StopWatch Started");
     helper("start");
@@ -280,6 +281,9 @@ function stopwatch_ui() {
     secs_html.innerText = "0" + secs;
     mins = 0;
     mins_html.innerText = "0" + mins;
+  }
+  function lap() {
+    console.log("Lap=>", mins+":"+secs+":"+millis)
   }
 }
 
